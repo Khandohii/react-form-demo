@@ -33,24 +33,6 @@ const MyCheckbox = ({children, ...props}) => {
     )
 }
 
-// const validate = (values) => {
-//     const errors = {}; 
-
-//     if (!values.name) {
-//         errors.name = 'Required field!';
-//     } else if (values.name.length < 2) {
-//         errors.name = 'Minimum length is 2 symbols';
-//     }
-
-//     if (!values.email) {
-//         errors.email = 'Required field!';
-//     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-//         errors.email = 'Invalid email!';
-//     }
-
-//     return errors;
-// }
-
 
 const CustomForm = () => {
     
@@ -80,8 +62,8 @@ const CustomForm = () => {
                 text: Yup.string()
                         .min(5, 'Mininum 5 symbols'),
                 terms: Yup.boolean()
-                        .required('Confirmation is needed')
-                        .oneOf([true], 'Confirmation is needed'),
+                        .required('Confirmation is required')
+                        .oneOf([true], 'Confirmation is required'),
     
             })}
             
@@ -90,38 +72,38 @@ const CustomForm = () => {
             }}
         >
             <Form className="form">
-                <h2>Отправить пожертвование</h2>
+                <h2>Send donation</h2>
                 <MyTextInput
-                    label='Ваше имя'
+                    label='Your name'
                     id="name"
                     name="name"
                     type="text"
                 />
                 <MyTextInput
-                    label='Ваша почта'
+                    label='Your email'
                     id="error"
                     name="error"
                     type="error"
                 />
                 <MyTextInput
-                    label='Количество'
+                    label='Amount'
                     id="amount"
                     name="amount"
                     type="number"
                 />
-                <label htmlFor="currency">Валюта</label>
+                <label htmlFor="currency">Currency</label>
                 <Field
                     id="currency"
                     name="currency"
                     as="select"
                     >
-                        <option value="">Выберите валюту</option>
+                        <option value="">Choose currency</option>
                         <option value="USD">USD</option>
-                        <option value="UAH">UAH</option>
-                        <option value="RUB">RUB</option>
+                        <option value="UAH">DKK</option>
+                        <option value="RUB">EUR</option>
                 </Field>
                 <ErrorMessage className='error' name='currency' component='div'/>
-                <label htmlFor="text">Ваше сообщение</label>
+                <label htmlFor="text">Message</label>
                 <Field 
                     id="text"
                     name="text"
@@ -130,8 +112,8 @@ const CustomForm = () => {
                 <ErrorMessage className='error' name='text' component='div'/>
                 <MyCheckbox
                     name="terms" 
-                >Соглашаетесь с политикой конфиденциальности?</MyCheckbox>
-                <button type="submit">Отправить</button>
+                >Do you agree with the privacy policy?</MyCheckbox>
+                <button type="submit">Send</button>
             </Form>
         </Formik>
     )
