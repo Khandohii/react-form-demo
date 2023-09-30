@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-form-demo/static/css/main.09703704.chunk.css",
+    "main.js": "/react-form-demo/static/js/main.aa1f73b7.chunk.js",
+    "main.js.map": "/react-form-demo/static/js/main.aa1f73b7.chunk.js.map",
+    "runtime-main.js": "/react-form-demo/static/js/runtime-main.c687341c.js",
+    "runtime-main.js.map": "/react-form-demo/static/js/runtime-main.c687341c.js.map",
+    "static/js/2.24cfe899.chunk.js": "/react-form-demo/static/js/2.24cfe899.chunk.js",
+    "static/js/2.24cfe899.chunk.js.map": "/react-form-demo/static/js/2.24cfe899.chunk.js.map",
+    "index.html": "/react-form-demo/index.html",
+    "static/css/main.09703704.chunk.css.map": "/react-form-demo/static/css/main.09703704.chunk.css.map",
+    "static/js/2.24cfe899.chunk.js.LICENSE.txt": "/react-form-demo/static/js/2.24cfe899.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c687341c.js",
+    "static/js/2.24cfe899.chunk.js",
+    "static/css/main.09703704.chunk.css",
+    "static/js/main.aa1f73b7.chunk.js"
+  ]
+}
